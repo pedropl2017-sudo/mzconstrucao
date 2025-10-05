@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MZ Construção - Contato e Localização - Cacimba Funda/CE</title>
+    
+    <style>
+        /* Reset Básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f0f0f0; 
+            color: #333;
+        }
+
+        /* Cores Base: Vermelho, Preto e Branco */
+        :root {
+            --cor-principal: #e44d26; /* Vermelho vibrante */
+            --cor-secundaria: #333333; /* Preto quase escuro */
+            --cor-texto-claro: #ffffff; /* Branco */
+            --cor-texto-escuro: #222222; /* Preto */
+            --cor-fundo-claro: #ffffff; /* Branco */
+        }
+
+        /* Cabeçalho (Padrão para Desktop) */
+        header {
+            background-color: var(--cor-principal);
+            color: var(--cor-texto-claro);
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Conteúdo Principal */
+        main {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .info-container {
+            background-color: var(--cor-fundo-claro);
+            border: 2px solid var(--cor-principal);
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--cor-secundaria);
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+
+        .detail {
+            margin-bottom: 25px;
+        }
+
+        .detail-label {
+            display: block;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: var(--cor-principal);
+            margin-bottom: 5px;
+        }
+
+        .detail-value {
+            font-size: 1.5em;
+            color: var(--cor-texto-escuro);
+        }
+        
+        a.link-destaque {
+            text-decoration: none;
+            color: var(--cor-principal);
+            font-weight: bold;
+            transition: color 0.3s;
+            display: inline-block;
+        }
+
+        a.link-destaque:hover {
+            color: var(--cor-secundaria);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: var(--cor-secundaria);
+            color: var(--cor-texto-claro);
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* ===================================== */
+        /* CÓDIGO DE RESPONSIVIDADE (MEDIA QUERIES) */
+        /* ===================================== */
+        
+        /* Ajustes para TABLETS (Telas até 768px) */
+        @media (max-width: 768px) {
+            header {
+                padding: 30px 0;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            .info-container {
+                padding: 30px;
+            }
+        }
+
+        /* Ajustes para CELULARES (Telas até 500px) */
+        @media (max-width: 500px) {
+            header {
+                padding: 20px 0;
+            }
+
+            header h1 {
+                font-size: 2em; /* Reduz o tamanho do título principal */
+            }
+            
+            h2 {
+                font-size: 1.7em;
+            }
+
+            .info-container {
+                padding: 20px 15px; /* Reduz o padding interno para caber na tela */
+            }
+
+            .detail-label {
+                font-size: 1.1em;
+            }
+            
+            .detail-value {
+                font-size: 1.3em; /* Reduz o tamanho do texto do valor */
+            }
+
+            footer {
+                padding: 15px;
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MZ Construção</h1>
+    </header>
+
+    <main>
+        <div class="info-container">
+            <h2>Contatos, Horários e Localização</h2>
+            
+            <div class="detail">
+                <span class="detail-label">NOSSOS WHATSAPPS</span>
+                <span class="detail-value">
+                    <a href="https://wa.me/5584991142606" class="link-destaque" target="_blank">(84) 9 9114-2606</a> <br>
+                    <a href="https://wa.me/5584994758225" class="link-destaque" target="_blank">(84) 9 9475-8225</a>
+                </span>
+                <p style="margin-top: 5px; font-size: 0.9em; color: var(--cor-secundaria);">
+                    *Clique no número desejado para iniciar a conversa.
+                </p>
+            </div>
+
+            <div class="detail">
+                <span class="detail-label">HORÁRIO DE FUNCIONAMENTO</span>
+                <span class="detail-value">
+                    Segunda a Sexta: 7h às 17h <br>
+                    Sábado: 7h às 12h
+                </span>
+            </div>
+            
+            <div class="detail">
+                <span class="detail-label">LOCALIZAÇÃO</span>
+                <span class="detail-value">Cacimba Funda - Mata Fresca, Aracati - CE, 62800-000</span>
+                <a href="https://maps.google.com/?cid=9181145368566224029&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNl" class="link-destaque" target="_blank">
+                    Ver no Mapa do Google
+                </a>
+            </div>
+
+            <div class="detail">
+                <span class="detail-label">SOBRE A LOJA</span>
+                <span class="detail-value">Loja de materiais de construção. Tudo para sua obra.</span>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 MZ Construção. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
